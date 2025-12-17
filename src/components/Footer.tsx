@@ -118,6 +118,12 @@ export const Footer = () => {
         </div>
       </div>
 
+      {/* Revolving Logo */}
+      <div className="fixed bottom-6 left-6 z-40">
+        <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center animate-spin-slow shadow-lg">
+          <span className="font-display text-xs text-primary-foreground">REV</span>
+        </div>
+      </div>
     </footer>
   );
 };
