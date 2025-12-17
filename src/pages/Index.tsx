@@ -6,8 +6,6 @@ import { BestSellers } from "@/components/BestSellers";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Testimonials } from "@/components/Testimonials";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
-import { RotatingLogo } from "@/components/RotatingLogo";
 
 const Index = () => {
   return (
@@ -22,8 +20,6 @@ const Index = () => {
         <Testimonials />
       </main>
       <Footer />
-      <FloatingContact />
-      <RotatingLogo />
     </div>
   );
 };
