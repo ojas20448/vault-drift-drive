@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Search, ShoppingCart, User, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoMain from "@/assets/logo-main.png";
 
 const aestheticsItems = [
   "Body Kits", "Spoilers & Wings", "Carbon Fiber Parts", "Grilles", 
@@ -21,10 +22,8 @@ export const Navbar = () => {
       <div className="container-rev">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <span className="font-display text-3xl text-foreground tracking-wider">
-              THE<span className="text-primary">REV</span>VAULT
-            </span>
+          <a href="/" className="flex items-center">
+            <img src={logoMain} alt="TheRevVault" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
