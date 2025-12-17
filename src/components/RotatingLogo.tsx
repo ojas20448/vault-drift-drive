@@ -2,7 +2,7 @@ import logoCircular from "@/assets/logo-circular.png";
 
 export const RotatingLogo = () => {
   return (
-    <div className="fixed bottom-6 right-24 z-40">
+    <div className="fixed bottom-6 right-6 z-40">
       <img 
         src={logoCircular} 
         alt="TheRevVault Logo" 
