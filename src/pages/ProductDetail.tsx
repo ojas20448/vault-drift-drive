@@ -2,10 +2,9 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { RotatingLogo } from "@/components/RotatingLogo";
 import { Button } from "@/components/ui/button";
-import { Heart, ShoppingCart, Truck, Shield, RotateCcw, ChevronLeft, Minus, Plus, Star } from "lucide-react";
+import { Heart, ShoppingCart, Truck, Shield, RotateCcw, Minus, Plus, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 // Placeholder - will be replaced with Shopify data
@@ -255,7 +254,6 @@ const ProductDetail = () => {
       </main>
 
       <Footer />
-      <FloatingContact />
       <RotatingLogo />
     </div>
   );

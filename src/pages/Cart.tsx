@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { RotatingLogo } from "@/components/RotatingLogo";
 import { Button } from "@/components/ui/button";
 import { Trash2, Plus, Minus, ShoppingBag, ArrowRight } from "lucide-react";
@@ -166,7 +165,6 @@ const Cart = () => {
       </main>
 
       <Footer />
-      <FloatingContact />
       <RotatingLogo />
     </div>
   );

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { RotatingLogo } from "@/components/RotatingLogo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -152,7 +151,6 @@ const Account = () => {
       </main>
 
       <Footer />
-      <FloatingContact />
       <RotatingLogo />
     </div>
   );
