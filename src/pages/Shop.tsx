@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { FloatingContact } from "@/components/FloatingContact";
 import { RotatingLogo } from "@/components/RotatingLogo";
 import { ProductCard } from "@/components/ProductCard";
 import { ProductFilters } from "@/components/ProductFilters";
@@ -199,7 +198,6 @@ const Shop = () => {
       )}
 
       <Footer />
-      <FloatingContact />
       <RotatingLogo />
     </div>
   );

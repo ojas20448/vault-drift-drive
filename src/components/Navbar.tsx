@@ -33,7 +33,6 @@ export const Navbar = () => {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
               <Link to="/" className="nav-link font-medium">Home</Link>
-              <Link to="/shop" className="nav-link font-medium">Shop</Link>
               
               {/* Aesthetics Dropdown */}
               <div 
@@ -126,7 +125,6 @@ export const Navbar = () => {
             <div className="lg:hidden py-6 border-t border-border animate-fade-in">
               <div className="flex flex-col gap-4">
                 <Link to="/" className="text-foreground font-medium py-2" onClick={() => setIsOpen(false)}>Home</Link>
-                <Link to="/shop" className="text-foreground font-medium py-2" onClick={() => setIsOpen(false)}>Shop</Link>
                 <div>
                   <p className="text-primary font-medium mb-2">Aesthetics</p>
                   {aestheticsItems.slice(0, 4).map((item) => (
