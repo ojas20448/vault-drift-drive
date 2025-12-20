@@ -1,7 +1,9 @@
 import { ShoppingCart, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
+  id?: string;
   name: string;
   brand: string;
   price: number;
@@ -9,15 +11,67 @@ interface ProductCardProps {
   image: string;
   category: string;
   isNew?: boolean;
+  layout?: "grid" | "list";
 }
 
-export const ProductCard = ({ name, brand, price, originalPrice, image, category, isNew }: ProductCardProps) => {
+export const ProductCard = ({ id, name, brand, price, originalPrice, image, category, isNew, layout = "grid" }: ProductCardProps) => {
   const discount = originalPrice ? Math.round((1 - price / originalPrice) * 100) : 0;
+  const productLink = id ? `/product/${id}` : "#";
+
+  if (layout === "list") {
+    return (
+      <div className="group bg-card border border-border rounded-xl overflow-hidden card-hover flex">
+        {/* Image */}
+        <Link to={productLink} className="relative w-48 flex-shrink-0 overflow-hidden bg-secondary">
+          <img 
+            src={image} 
+            alt={name}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          {isNew && (
+            <span className="absolute top-3 left-3 px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded">
+              NEW
+            </span>
+          )}
+        </Link>
+
+        {/* Content */}
+        <div className="flex-1 p-4 flex flex-col justify-between">
+          <div>
+            <p className="text-xs text-primary font-medium uppercase tracking-wider mb-1">{brand}</p>
+            <Link to={productLink}>
+              <h3 className="font-medium text-foreground mb-2 group-hover:text-primary transition-colors">
+                {name}
+              </h3>
+            </Link>
+            <p className="text-xs text-muted-foreground mb-2">{category}</p>
+          </div>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="font-display text-2xl text-foreground">${price.toLocaleString()}</span>
+              {originalPrice && (
+                <span className="text-sm text-muted-foreground line-through">${originalPrice.toLocaleString()}</span>
+              )}
+            </div>
+            <div className="flex gap-2">
+              <Button size="icon" variant="secondary" className="w-9 h-9 rounded-full">
+                <Heart className="w-4 h-4" />
+              </Button>
+              <Button size="sm" className="btn-primary">
+                <ShoppingCart className="w-4 h-4 mr-2" />
+                Add to Cart
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="group bg-card border border-border rounded-xl overflow-hidden card-hover">
       {/* Image Container */}
-      <div className="relative aspect-square overflow-hidden bg-secondary">
+      <Link to={productLink} className="relative aspect-square overflow-hidden bg-secondary block">
         <img 
           src={image} 
           alt={name}
@@ -52,24 +106,26 @@ export const ProductCard = ({ name, brand, price, originalPrice, image, category
             Add to Cart
           </Button>
         </div>
-      </div>
+      </Link>
 
       {/* Content */}
       <div className="p-4">
         <p className="text-xs text-primary font-medium uppercase tracking-wider mb-1">
           {brand}
         </p>
-        <h3 className="font-medium text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">
-          {name}
-        </h3>
+        <Link to={productLink}>
+          <h3 className="font-medium text-foreground mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+            {name}
+          </h3>
+        </Link>
         <p className="text-xs text-muted-foreground mb-3">{category}</p>
         <div className="flex items-center gap-2">
           <span className="font-display text-2xl text-foreground">
-            ₹{price.toLocaleString()}
+            ${price.toLocaleString()}
           </span>
           {originalPrice && (
             <span className="text-sm text-muted-foreground line-through">
-              ₹{originalPrice.toLocaleString()}
+              ${originalPrice.toLocaleString()}
             </span>
           )}
         </div>
