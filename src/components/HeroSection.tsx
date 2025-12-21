@@ -48,15 +48,15 @@ export const HeroSection = () => {
           {/* Stats */}
           <div className="flex gap-12 mt-16 animate-slide-up" style={{ animationDelay: "0.4s" }}>
             <div>
-              <p className="font-display text-4xl md:text-5xl text-primary">500+</p>
+              <p className="font-display text-4xl md:text-5xl text-primary">100+</p>
               <p className="text-muted-foreground text-sm">Products</p>
             </div>
             <div>
-              <p className="font-display text-4xl md:text-5xl text-foreground">50+</p>
+              <p className="font-display text-4xl md:text-5xl text-foreground">10+</p>
               <p className="text-muted-foreground text-sm">Brands</p>
             </div>
             <div>
-              <p className="font-display text-4xl md:text-5xl text-foreground">1000+</p>
+              <p className="font-display text-4xl md:text-5xl text-foreground">200+</p>
               <p className="text-muted-foreground text-sm">Happy Customers</p>
             </div>
           </div>
