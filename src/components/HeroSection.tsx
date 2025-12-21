@@ -17,11 +17,6 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="container-rev relative z-10 pt-20">
         <div className="max-w-3xl">
-          <div className="animate-slide-up">
-            <span className="inline-block px-4 py-2 bg-primary/20 border border-primary/30 rounded-full text-primary text-sm font-medium mb-6">
-              Premium Auto Accessories
-            </span>
-          </div>
           
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground leading-none mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
             UNLEASH YOUR
