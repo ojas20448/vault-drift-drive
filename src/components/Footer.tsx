@@ -1,6 +1,7 @@
 import { Instagram, Facebook, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -111,8 +112,8 @@ export const Footer = () => {
               © 2024 TheRevVault. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="text-muted-foreground hover:text-foreground text-sm">Privacy Policy</a>
-              <a href="#" className="text-muted-foreground hover:text-foreground text-sm">Terms & Conditions</a>
+              <Link to="/privacy" className="text-muted-foreground hover:text-foreground text-sm">Privacy Policy</Link>
+              <Link to="/terms" className="text-muted-foreground hover:text-foreground text-sm">Terms & Conditions</Link>
             </div>
           </div>
         </div>
