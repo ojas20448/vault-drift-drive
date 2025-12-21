@@ -23,7 +23,7 @@ export const HeroSection = () => {
       <div className="container-rev relative z-10 pt-20">
         <div className="max-w-3xl">
           
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-foreground leading-none mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight tracking-wide mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
             UNLEASH YOUR
             <br />
             <span className="text-gradient-red">MACHINE'S</span>
