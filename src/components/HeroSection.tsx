@@ -20,8 +20,8 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container-rev relative z-10 pt-20">
-        <div className="max-w-3xl">
+      <div className="container-rev relative z-10 pt-20 flex justify-start">
+        <div className="max-w-3xl text-left">
           
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight tracking-wide mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
             UNLEASH YOUR
