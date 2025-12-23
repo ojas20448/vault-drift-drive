@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Menu, X, Search, ShoppingCart, User, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SearchModal } from "@/components/SearchModal";
-import logoMain from "@/assets/logo-main.png";
+import logoNavbar from "@/assets/logo-navbar.png";
 const aestheticsItems = ["Body Kits", "Spoilers & Wings", "Carbon Fiber Parts", "Grilles", "Side Skirts", "Diffusers", "Mirror Caps", "Exhaust Tips"];
 const performanceItems = ["Air Intakes", "Exhaust Systems", "ECU Tuning", "Suspension", "Brake Kits", "Turbo Kits", "Intercoolers", "Performance Filters"];
 export const Navbar = () => {
@@ -16,7 +16,7 @@ export const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img alt="TheRevVault" className="h-16 w-auto" src="/lovable-uploads/55312bfe-d712-4664-8d84-0acd9c4d2035.png" />
+              <img alt="TheRevVault" className="h-12 w-auto" src={logoNavbar} />
             </Link>
 
             {/* Desktop Navigation */}
