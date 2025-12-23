@@ -12,7 +12,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="w-full relative z-10 pt-20 pl-4 sm:pl-6 lg:pl-8 xl:pl-16">
+      <div className="w-full relative z-10 pt-20 pl-8 sm:pl-12 lg:pl-20 xl:pl-32">
         <div className="max-w-3xl">
           
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight tracking-wide mb-8 animate-slide-up" style={{
