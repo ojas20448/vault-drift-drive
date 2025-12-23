@@ -82,8 +82,7 @@ export const Navbar = () => {
                 )}
               </div>
 
-              <Link to="/terms" className="nav-link font-medium">T&C</Link>
-              <Link to="/privacy" className="nav-link font-medium">Privacy</Link>
+              <Link to="/blog" className="nav-link font-medium">Blog</Link>
             </div>
 
             {/* Right Side Actions */}
@@ -151,8 +150,7 @@ export const Navbar = () => {
                     </Link>
                   ))}
                 </div>
-                <Link to="/terms" className="text-foreground font-medium py-2" onClick={() => setIsOpen(false)}>T&C</Link>
-                <Link to="/privacy" className="text-foreground font-medium py-2" onClick={() => setIsOpen(false)}>Privacy</Link>
+                <Link to="/blog" className="text-foreground font-medium py-2" onClick={() => setIsOpen(false)}>Blog</Link>
                 <div className="flex items-center gap-4 pt-4 border-t border-border">
                   <Link to="/account" className="flex-1">
                     <Button variant="outline" size="sm" className="w-full" onClick={() => setIsOpen(false)}>Login</Button>
