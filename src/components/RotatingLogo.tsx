@@ -1,13 +1,21 @@
 import logoCircular from "@/assets/logo-circular.png";
 
 export const RotatingLogo = () => {
+  const whatsappNumber = "919876543210"; // Replace with your actual WhatsApp number
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hi! I'm interested in your products.`;
+
   return (
-    <div className="fixed bottom-6 right-6 z-40">
+    <a 
+      href={whatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-40 cursor-pointer hover:scale-110 transition-transform duration-300"
+    >
       <img 
         src={logoCircular} 
-        alt="TheRevVault Logo" 
+        alt="Contact us on WhatsApp" 
         className="w-16 h-16 animate-spin-slow"
       />
-    </div>
+    </a>
   );
 };

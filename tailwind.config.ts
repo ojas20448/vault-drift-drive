@@ -94,7 +94,7 @@ export default {
         marquee: "marquee 25s linear infinite",
         "marquee-reverse": "marquee-reverse 25s linear infinite",
         shimmer: "shimmer 2s linear infinite",
-        "spin-slow": "spin 8s linear infinite",
+        "spin-slow": "spin 4s linear infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
