@@ -16,7 +16,7 @@ export const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <img alt="TheRevVault" className="h-12 w-auto mix-blend-lighten" src={logoNavbar} />
+              <img alt="TheRevVault" className="h-16 w-auto" src={logoNavbar} />
             </Link>
 
             {/* Desktop Navigation */}
