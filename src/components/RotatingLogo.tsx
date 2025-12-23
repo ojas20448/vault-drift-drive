@@ -11,11 +11,13 @@ export const RotatingLogo = () => {
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-40 cursor-pointer hover:scale-110 transition-transform duration-300"
     >
-      <img 
-        src={logoCircular} 
-        alt="Contact us on WhatsApp" 
-        className="w-16 h-16 animate-spin-slow"
-      />
+      <div className="w-16 h-16 rounded-full bg-rev-dark/90 backdrop-blur-sm border border-rev-red/30 flex items-center justify-center shadow-lg shadow-rev-red/20">
+        <img 
+          src={logoCircular} 
+          alt="Contact us on WhatsApp" 
+          className="w-12 h-12 animate-spin-slow object-contain"
+        />
+      </div>
     </a>
   );
 };
